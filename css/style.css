@@ -1,0 +1,255 @@
+/*
+Base Styles
+*/
+/* apply a natural box layout model to all elements */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+body {
+  /*font-family: Futura, "Trebuchet MS", Arial, sans-serif;*/
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: #403e3b;
+}
+a {
+  color: #a4a099;
+}
+a:active, , a:visited, a:hover {
+  color: #403e3b;
+}
+#main-content p {
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+  /* Logo */
+  .siteinfo img {
+    margin: 2em;
+  }
+
+/* Menu */
+.sidebar-first nav a {
+  font-size: 1.75em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a4a099;
+  display: block;
+  padding: 0 1em 1em 1em;
+}
+.sidebar-first nav a:active,
+.sidebar-first nav a:hover {
+  color: #403e3b;
+  text-decoration: none;
+}
+.sidebar-first nav a.active-trail {
+  color: #403e3b;
+}
+
+/* Facebook Icon */
+.block-follow-site {
+  margin-top: 10px;
+
+  position: absolute;
+  right: 1em;
+  top: 12.3em;
+}
+a.follow-link {
+    height: 34px;
+    line-height: 34px;
+    margin-left:1em;
+}
+a.follow-link-facebook {
+  background-image: url(../images/facebook.png);
+}
+
+/* All rights reserved Block */
+
+.block-block-1 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding:1em;
+  color: #a4a099;
+
+  display: none;
+}
+.block-block-2 {
+    padding:2em 0 0 2em;
+    color: #a4a099;
+  }
+
+/* About us Page */
+.field-name-field-page-image img {
+  float: right;
+}
+.ds-2col-fluid > .group-left, .ds-2col-fluid > .group-right {
+  float:none;
+  width: 100%;
+  padding-left: 2em;
+}
+.field-name-field-page-image img {
+  float: none;
+}
+
+/* Show Page */
+.page-shows #main-content > div {
+  float:left;
+  clear:left;
+  margin-bottom:5%;
+}
+.page-shows .views-field-title-field {
+  float: left;
+  margin: 4% 0 0 9%;
+}
+.views-field-field-show-image img {
+  float: left;
+}
+.page-shows .views-field-body {
+  float: left;
+  margin-left: 9%;
+}
+
+/* Press */
+.presslist {
+  padding-left: 2em;
+}
+.presslist ul li {
+  float:left;
+  margin:0 10px 40px 0;
+}
+.presslist ul li:nth-child(2),
+.presslist ul li:nth-child(5),
+.presslist ul li:nth-child(9),
+.presslist ul li:nth-child(13)
+  {
+  margin-right:40px;
+}
+
+/* Hide Text Format Help on editor */
+.filter-help { display: none; }
+
+@media screen and (min-width: 500px) {
+  /* Menu */
+  .sidebar-first {
+    position: absolute;
+    top: 300px;
+    bottom:70px;
+    width: 17.5%;
+    max-height: 550px;
+    margin: 0 0 0 5%;
+    border-left: 1px solid #a3a197;
+  }
+  .sidebar-first nav {
+    padding-top:100px;
+  }
+  .sidebar-first nav a {
+    padding: 0 .5em .5em 5px;
+  }
+  /* Facebook Icon */
+  .block-follow-site {
+    position: static;
+  }
+  .block-block-1 {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    padding:0;
+  }
+  /* Content */
+  #main-content {
+    margin: 296px 0 0 22.5%;
+    padding: 0 0 0 3.5%;
+  }
+  .front #main-content {
+    margin-top: 115px;
+  }
+  .field-name-field-frontpage-image img {
+    margin-left:8px;
+  }
+  .page-shows #main-content {
+    margin-top:280px;
+  }
+  .page-press #main-content {
+    margin-top:300px;
+  }
+  .ds-2col-fluid > .group-left {
+    float: left;
+    width: 45%;
+    padding-left:0;
+    margin-right:5%;
+  }
+  .ds-2col-fluid > .group-right {
+    float: left;
+    width: 50%;
+    padding-left: 0;
+  }
+  a.follow-link {
+    margin-left:5px;
+  }
+  .page-shows #main-content {
+    margin: 0 0 5% 26%;
+  }
+  /* Disable mobile Rights notice */
+  .block-block-2 {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* Logo */
+  .siteinfo img {
+    top:42px;
+    left:5%;
+    margin: 0 0 62px 0;
+    position: fixed;
+    z-index:0;
+    width: 190px;
+    height: 188px;
+  }
+  /* Menu */
+  .sidebar-first {
+    position: fixed;
+    top: 300px;
+    bottom:70px;
+    width: 17.5%;
+    max-height: 550px;
+    margin: 0 0 0 5%;
+    border-left: 1px solid #a3a197;
+  }
+  .sidebar-first nav {
+    padding-top:100px;
+  }
+  .sidebar-first nav a {
+    padding: 0 .5em .5em 5px;
+  }
+  /* Container */
+  .page {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 70px;
+  }
+  /* Content */
+  #main-content {
+    margin: 296px 0 0 22.5%;
+    padding: 0 0 0 3.5%;
+  }
+  .front #main-content {
+    margin-top: 115px;
+  }
+  .field-name-field-frontpage-image img {
+    margin-left:8px;
+  }
+  .page-shows #main-content {
+    margin-top:280px;
+  }
+  .page-press #main-content {
+    margin-top:300px;
+  }
+  .presslist {
+    padding: 0;
+  }
+  .view-mode-imprint .field-name-field-page-image img {
+    margin-top: 100px;
+  }
+}
