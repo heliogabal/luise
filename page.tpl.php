@@ -9,7 +9,7 @@
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
-<header role="banner">
+<div class="page">
   <div class="siteinfo">
     <?php if ($logo): ?>
       <figure>
@@ -37,9 +37,8 @@
     </div>
   <?php endif; ?>
 
-</header>
 
-<div class="page">
+
   <?php if ($page['sidebar_first']): ?>
     <div class="sidebar-first">
     <?php print render($page['sidebar_first']); ?>

@@ -3,6 +3,12 @@
   Preprocess
 */
 
+function luise_preprocess_image(&$variables) {
+    if (is_null($variables['title'])) {
+        $variables['title']     = '';
+    }
+}
+
 /*
 function luise_preprocess_html(&$vars) {
   //  kpr($vars['content']);

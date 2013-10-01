@@ -8,6 +8,10 @@ Base Styles
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
  }
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
 body {
   /*font-family: Futura, "Trebuchet MS", Arial, sans-serif;*/
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
@@ -95,11 +99,11 @@ a.follow-link-facebook {
 .page-shows #main-content > div {
   float:left;
   clear:left;
-  margin-bottom:5%;
+  margin:0 0 5% 51px;
 }
 .page-shows .views-field-title-field {
   float: left;
-  margin: 4% 0 0 9%;
+  margin: 3.5% 0 0 9%;
 }
 .views-field-field-show-image img {
   float: left;
@@ -117,12 +121,11 @@ a.follow-link-facebook {
   float:left;
   margin:0 10px 40px 0;
 }
-.presslist ul li:nth-child(2),
-.presslist ul li:nth-child(5),
-.presslist ul li:nth-child(9),
-.presslist ul li:nth-child(13)
-  {
+.presslist ul li:nth-child(odd) {
   margin-right:40px;
+}
+.presslist ul li:last-child {
+  margin-bottom:70px;
 }
 
 /* Hide Text Format Help on editor */
@@ -197,24 +200,14 @@ a.follow-link-facebook {
 }
 
 @media screen and (min-width: 1000px) {
-  /* Logo */
-  .siteinfo img {
-    top:42px;
-    left:5%;
-    margin: 0 0 62px 0;
-    position: fixed;
-    z-index:0;
-    width: 190px;
-    height: 188px;
-  }
   /* Menu */
   .sidebar-first {
     position: fixed;
-    top: 300px;
+    top: 301px;
     bottom:70px;
-    width: 17.5%;
+    width: 190px;
     max-height: 550px;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 61px;
     border-left: 1px solid #a3a197;
   }
   .sidebar-first nav {
@@ -225,17 +218,28 @@ a.follow-link-facebook {
   }
   /* Container */
   .page {
-    width: 100%;
     max-width: 1200px;
-    margin-bottom: 70px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
+
+/* Logo */
+  .siteinfo img {
+    margin: 44px 0 62px 58px;
+    position: fixed;
+    z-index:0;
+    width: 190px;
+    height: 188px;
+  }
+
   /* Content */
   #main-content {
-    margin: 296px 0 0 22.5%;
-    padding: 0 0 0 3.5%;
+    margin: 296px 70px 0 310px;
+    padding: 0;
   }
   .front #main-content {
-    margin-top: 115px;
+    margin-top: 112px;
   }
   .field-name-field-frontpage-image img {
     margin-left:8px;
