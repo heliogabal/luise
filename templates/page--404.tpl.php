@@ -34,13 +34,13 @@
 </header>
 
 
-<div class="page">
+<div class="page page_404">
   <div role="main" id="main-content">
 
   <article>
 
 
-   <h1>Not Found</h1>
+   <h1 style="display:block;">Not Found</h1>
 
     <h2>
       These are not the nodes you are looking for
@@ -53,18 +53,14 @@
       <li>an out-of-date link</li>
     </ul>
 
-    <a href="/search/">search ?</a>
-
+    <!--<a href="/search/">search ?</a>-->
+    <p>
     <script>
       var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
     </script>
     <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
-
+    </p>
   </article>
 
   </div>
 </div>
-
-<footer role="contentinfo">
-
-</footer>

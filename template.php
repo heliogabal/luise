@@ -3,11 +3,47 @@
   Preprocess
 */
 
+/**
+* Preprocesses the wrapping HTML.
+*
+* @param array &$variables
+*   Template variables.
+*/
+function luise_preprocess_html(&$vars) {
+  // Setup Google Webmasters Verification Meta Tag
+  $google_webmasters_verification = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'google-site-verification',
+      // REPLACE THIS CODE WITH THE ONE GOOGLE SUPPLIED YOU WITH
+      'content' => 'mECRFe1RIJiFnbpgHzjYJ-HEIf4gsFW5tDMQfPPbTAc',
+    )
+  );
+  // Add Google Webmasters Verification Meta Tag to head
+  drupal_add_html_head($google_webmasters_verification, 'google_webmasters_verification');
+}
+/*
 function luise_preprocess_image(&$variables) {
     if (is_null($variables['title'])) {
         $variables['title']     = '';
     }
 }
+*/
+
+/* Remove empty title displaying null on images */
+/* function phptemplate_image($path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
+  if (!$getsize || (is_file($path) && (list($width, $height, $type, $image_attributes) = @getimagesize($path)))) {
+    if (!empty($title)) {
+      $attributes['title'] = $title;
+    }
+    $attributes = drupal_attributes($attributes);
+    $url = (url($path) == $path) ? $path : (base_path() . $path);
+    return '<img src="'. check_url($url) .'" alt="'. check_plain($alt) . '" ' . (isset($image_attributes) ? $image_attributes : '') . $attributes .' />';
+  }
+}
+*/
+
 
 /*
 function luise_preprocess_html(&$vars) {

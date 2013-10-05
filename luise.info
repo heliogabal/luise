@@ -1,5 +1,5 @@
 name = luise
-description = Hi im luise based on mothership - you should really rename me :)
+description = Based on mothership - a truly custom theme for Luise Keller Jewellery
 screenshot = screenshot.png
 engine = phptemplate
 core = 7.x

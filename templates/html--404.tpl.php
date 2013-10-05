@@ -6,10 +6,11 @@
   <style>
     body { text-align: center;}
     h1 { font-size: 50px; text-align: center }
-    body { font: 20px Constantia, 'Hoefler Text',  "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; color: #999; text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5); }
+    // body { font: 20px Constantia, 'Hoefler Text',  "Adobe Caslon Pro", Baskerville, Georgia, Times, serif; color: #999; text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5); }
     article {display:block; text-align: left; width: 500px; margin: 0 auto; }
     a { color: rgb(36, 109, 56); text-decoration:none; }
     a:hover { color: rgb(96, 73, 141) ; text-shadow: 2px 2px 2px rgba(36, 109, 56, 0.5); }
+    ul {margin:1em 0;}
   </style>
 </head>
 <body>
@@ -30,7 +31,7 @@
       <li>an out-of-date link</li>
     </ul>
 
-    <a href="/search/">search ?</a>
+    <!--<a href="/search/">search ?</a>-->
 
     <script>
       var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;

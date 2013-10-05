@@ -9,7 +9,7 @@
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
-<div class="page">
+<div class="<?php print $classes; ?>">
   <div class="siteinfo">
     <?php if ($logo): ?>
       <figure>
@@ -46,13 +46,14 @@
   <?php endif; ?>
 
   <div role="main" id="main-content">
-    <!--<?php print render($title_prefix); ?>
     <?php if ($title): ?>
+    <?php print render($title_prefix); ?>
       <h1><?php print $title; ?></h1>
-    <?php endif; ?>
     <?php print render($title_suffix); ?>
+    <?php endif; ?>
 
-    <?php print $breadcrumb; ?> -->
+    <?php print $breadcrumb; ?>
+
     <?php if ($action_links): ?>
       <ul class="action-links"><?php print render($action_links); ?></ul>
     <?php endif; ?>
@@ -82,18 +83,3 @@
     </div>
   <?php endif; ?>
 </div><!-- /page -->
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
-
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://inglist.de/piwik/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "33"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Piwik Code -->

@@ -17,10 +17,16 @@ body {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   color: #403e3b;
 }
+h1, .breadcrumb, .filter-wrapper {
+	display:none;
+}
+.page_404 {
+	line-height:1.625;
+}
 a {
   color: #a4a099;
 }
-a:active, , a:visited, a:hover {
+a:active, a:visited, a:hover {
   color: #403e3b;
 }
 small {
@@ -36,7 +42,7 @@ small {
   font-size: 14px;
 }
   /* Logo */
-  .siteinfo img {
+.siteinfo img {
     margin: 2em;
   }
 
@@ -101,16 +107,13 @@ a.follow-link-facebook {
 
 /* About us Page */
 .ds-2col-fluid {
-    margin: 0 0 70px 0;
+    margin: 0 0 50px 0;
     overflow: hidden;
   }
 .ds-2col-fluid > .group-left, .ds-2col-fluid > .group-right {
   float:none;
   width: 100%;
   padding-left: 2em;
-}
-.field-name-field-page-image img {
-  float: none;
 }
 
 /* Show Page */
@@ -251,16 +254,15 @@ a.follow-link-facebook {
     width: 54%;
     margin-top:3px;
   }
-  .field-name-field-page-image img {
-    float: right;
+  #main-content .view-mode-imprint p:first-child {
+    white-space: nowrap;
   }
-  .view-mode-imprint .field-name-body {
-    float:left;
+  .field-name-field-page-image img {
+    float:right;
   }
   .view-mode-imprint .field-name-field-page-image {
-    margin: 100px 50px 0 0;
+    margin: 90px 50px 0 0;
     float:right;
-    width:250px;
   }
 }
 
@@ -320,10 +322,5 @@ a.follow-link-facebook {
   }
   .view-mode-imprint .field-name-body {
     float:left;
-  }
-  .view-mode-imprint .field-name-field-page-image {
-    margin: 100px 50px 0 0;
-    float:right;
-    width:350px;
   }
 }
